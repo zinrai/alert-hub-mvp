@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>アラート詳細</h2>
+  <p><strong>件名:</strong> {{ alert.subject }}</p>
+  <p><strong>本文:</strong> {{ alert.body }}</p>
+  <p><strong>識別子:</strong> {{ alert.identifier }}</p>
+  <p><strong>緊急度:</strong> {{ alert.get_urgency_display }}</p>
+  <p><strong>ステータス:</strong> {{ alert.get_status_display }}</p>
+  <p><strong>作成日時:</strong> {{ alert.created_at }}</p>
+  <p><strong>更新日時:</strong> {{ alert.updated_at }}</p>
+{% endblock %}
