@@ -38,13 +38,13 @@ This application is designed for demonstration purposes only. It is not suitable
 
 ## Web UI
 
-Alert list: http://localhost:8000/alerts
+Alert list: `http://localhost:8000/alerts`
 
 Alert status can be updated directly from the alert list page.
 
 ![webui-alerts-list](./webui_alert_list.png)
 
-Alert detail: http://localhost:8000/alert/\<id\>/
+Alert detail: `http://localhost:8000/alert/<id>/`
 
 ![webui-alerts-detail](./webui_alert_detail.png)
 
