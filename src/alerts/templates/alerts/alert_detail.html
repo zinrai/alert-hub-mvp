@@ -3,7 +3,8 @@
 {% block content %}
   <h2>アラート詳細</h2>
   <p><strong>件名:</strong> {{ alert.subject }}</p>
-  <p><strong>本文:</strong> {{ alert.body }}</p>
+  <p><strong>本文:</strong></p>
+  <pre style="white-space: pre-wrap; word-wrap: break-word; background-color: #f5f5f5; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">{{ alert.body }}</pre>
   <p><strong>識別子:</strong> {{ alert.identifier }}</p>
   <p><strong>緊急度:</strong> {{ alert.get_urgency_display }}</p>
   <p><strong>ステータス:</strong> {{ alert.get_status_display }}</p>
