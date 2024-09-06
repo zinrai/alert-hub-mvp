@@ -8,5 +8,5 @@ router.register(r'alerts', views.AlertViewSet)
 urlpatterns = [
     path('api/', include(router.urls)),
     path('alerts/', views.AlertListView.as_view(), name='alert_list'),
-    path('alert/<int:pk>/', views.AlertDetailView.as_view(), name='alert_detail'),
+    path('alerts/<int:pk>/', views.AlertDetailView.as_view(), name='alert_detail'),
 ]
